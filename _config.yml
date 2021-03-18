@@ -59,7 +59,8 @@ plugins:
 author:
   name   : "Andres Garcia"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Graduate student studying Geospatial Intelligence in 
+            the Department of Geographical Sciences, University of Maryland, College Park."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
