@@ -59,12 +59,14 @@ plugins:
 author:
   name   : "Andres Garcia"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Graduate student studying Geospatial Intelligence in 
-            the Department of Geographical Sciences, University of Maryland, College Park."
+  bio    : "Kayaker. Spatial Analyst."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://andgarc.github.io"
+    - label: "College Park, MD"
+      icon: "fas fa-fw fa-thumbtack"
+    - label: "SECYNC"
+      icon: "fas fa-fw fa-briefcase"
+    - label: "CGIS"
+      icon: "fas fa-fw fa-briefcase"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andGarc"
