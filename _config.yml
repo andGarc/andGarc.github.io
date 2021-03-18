@@ -62,6 +62,12 @@ author:
   bio    : "Kayaker. Spatial Analyst."
   location: "College Park, MD, USA"
   links:
+    - label: "SESYNC"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.sesync.org"
+    - label: "CGIS"
+      icon: "fas fa-fw fa-link"
+      url: "https://geospatial.umd.edu"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "garcia.andres@protonmail.com"
