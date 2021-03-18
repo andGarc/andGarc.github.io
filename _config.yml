@@ -61,8 +61,6 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Kayaker. Spatial Analyst."
   location: "College Park, MD, USA"
-  location: "SESYNC"
-  location: "CGIS"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
