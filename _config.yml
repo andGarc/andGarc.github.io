@@ -60,12 +60,12 @@ author:
   name   : "Andres Garcia"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Kayaker. Spatial Analyst."
+  location: "College Park, MD"
+  email: garcia.andres@protonmail.com
   links:
-    - label: "College Park, MD"
-      icon: "fas fa-fw fa-thumbtack"
-    - label: "SECYNC"
+    - label: "location"
       icon: "fas fa-fw fa-briefcase"
-    - label: "CGIS"
+    - label: "location"
       icon: "fas fa-fw fa-briefcase"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
