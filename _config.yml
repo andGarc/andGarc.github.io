@@ -61,12 +61,10 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Kayaker. Spatial Analyst."
   location: "College Park, MD"
-  email: garcia.andres@protonmail.com
   links:
-    - label: "location"
-      icon: "fas fa-fw fa-briefcase"
-    - label: "location"
-      icon: "fas fa-fw fa-briefcase"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "garcia.andres@protonmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andGarc"
