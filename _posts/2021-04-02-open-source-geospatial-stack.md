@@ -38,6 +38,9 @@ A new window will open. Click launch instance then select Ubuntu Server 18.04.
 You will be directed to Step 2 of the set up. 
 t2.micro will be selected by default. 
 Leave t2.micro as is and click Next. 
+<figure>
+    <a href="/assest/images/geostack/t2.png"></a>
+</figure>
 ![](/assest/images/geostack/t2.png)
 
 Leave the Step 3 as is and click Next: Add Storage. 
