@@ -32,21 +32,18 @@ An EC2 instance is a virtual server in the AWS cloud. EC2 stand for Elastic Comp
 
 From the Services drop-down menu on the top left select EC2.
 A new window will open. Click launch instance then select Ubuntu Server 18.04.
-![](/assest/images/geostack/launch_ec2.png)
-![](/assest/images/geostack/select_ubuntu.png)
+![](/assets/images/geostack/launch_ec2.png)
+![](/assets/images/geostack/select_ubuntu.png)
 
 You will be directed to Step 2 of the set up. 
 t2.micro will be selected by default. 
 Leave t2.micro as is and click Next. 
-<figure>
-    <a href="/assest/images/geostack/t2.png"></a>
-</figure>
-![](/assest/images/geostack/t2.png)
+![](/assets/images/geostack/t2.png)
 
 Leave the Step 3 as is and click Next: Add Storage. 
 
 In Step 4 increase the storage to 30gb and click next to continue. 
-![](/assest/images/geostack/storage.png)
+![](/assets/images/geostack/storage.png)
 
 In Step 5, add tags that oyu think will be beneficial.
 Click Next: Configure Security Group.
@@ -54,7 +51,7 @@ Click Next: Configure Security Group.
 Now, in Step 6, we will configure the security group. This is were we set up the type of connections from and to our new instance. 
 Fow now, we will only grant access to our computer. 
 Under Source, select My IP and add a description. 
-![](/assest/images/geostack/security_group.png)
+![](/assets/images/geostack/security_group.png)
 
 You can always edit these rules later if you need to grant access via SSH to other users. 
 
@@ -72,14 +69,14 @@ To see if your instance is ready to go, click on view instance or select EC2 fro
 Next we need to allocate and associate an elastic ip to the instance. This is a requirement for being able to point our domain to our instance. 
 
 In your EC2 instance dashboard, under Network and Security, click Elastic IPs. 
-![](/assest/images/geostack/elastic_ip.png)
+![](/assets/images/geostack/elastic_ip.png)
 
 Click Allocate Elastic IP Address.
 Leave the defaults and click Allocate.
 
 The new ip will be listed on the screen. 
 Make sure the ip is selected then under Actions click Associate Elastic IP address. 
-![](/assest/images/geostack/associate.png)
+![](/assets/images/geostack/associate.png)
 
 Select your instance from the instance dropdown, leave everything else as is and click Associate. 
 
@@ -247,11 +244,11 @@ Next we will link our instance to our domain and secure it with and [SSL certifi
 An SSL certificate is the standard technology for keeping an internet connection secure and protecting data transfer between systems. For more info check [this](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate) out. 
 
 To set up our SSL certificate go to you AWS dashboard and select Certificate Manager from the Services drop-down menu.
-![](/assest/images/geostack/cert_manager.png)
+![](/assets/images/geostack/cert_manager.png)
 
 Click Get Started under Provision certificates.
 Make sure Request a public certificate is selected, then Request a certificate. 
-![](/assest/images/geostack/request_cert.png)
+![](/assets/images/geostack/request_cert.png)
 
 Fill in you domain name with an `*` at the begining.
 ```
@@ -261,11 +258,11 @@ Fill in you domain name with an `*` at the begining.
 Select DNS validation and click Next until you reach the Validation step.
 
 Click Export DNS configuration to a file. Once downloaded, open this file.
-![](/assest/images/geostack/export_dns.png)
+![](/assets/images/geostack/export_dns.png)
 
 Now log into you domain's management dashboard. This will vary depending on what domain service you are using.
 If you are using namecheap, log into your account, click Domain List, Manage, and Advance DNS.
-![](/assest/images/geostack/geostack/advanced_dns.png)
+![](/assets/images/geostack/geostack/advanced_dns.png)
 
 Delete any existing records by clicking the trash symbol on the right side. Records are located at the bottom of the screen.
 
