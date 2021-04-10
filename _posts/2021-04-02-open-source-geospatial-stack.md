@@ -1,22 +1,16 @@
-Learn how to create a production ready backend environment for web mapping and GIS purposes. 
-This backend envrironement is simple and low-cost to build. It is build using Geoserver and PostgreSQL, more specifically PostGIS. 
+Learn how to create backend environment for web mapping and GIS purposes. 
+This backend environnement is simple and low-cost to build. It is build using Geoserver and PostgreSQL, more specifically PostGIS. 
 
 ## Objectives
 1. Create a web geospatial stack consisting of PostgreSQL and Geoserver
 2. Learn to utilize Amazon Web Services(AWS)
-3. Secure it all with a free SSL certificate using AWS
 
 ---
 
-## Create a AWS Account and Set Up a Web Domain
+## Create a AWS Account
 
 Go to AWS's [website](https://aws.amazon.com) and create a new user account.
 A Free-tier usage account is enough to get the main gist behind this process. 
-
-Secondly, get a domain name. The provider does not matter here. 
-If you are an educator or a student, I suggest you apply for a Github Student/Teacher Developer [Pack](https://education.github.com/pack/).
-This pack will will give you a 1 year domain registration for free. 
-For this, we will use a namecheap domain.
 
 ---
 
@@ -66,7 +60,7 @@ Launch the Instance.
 This might take a couple minutes.
 To see if your instance is ready to go, click on view instance or select EC2 from the Services drop-down menu. The state of the instance will say 'running' and we are ready to go. 
 
-Next we need to allocate and associate an elastic ip to the instance. This is a requirement for being able to point our domain to our instance. 
+Next we need to allocate and associate an elastic ip to the instance. This is a requirement for being able to point a domain to our instance (in case you want to). 
 
 In your EC2 instance dashboard, under Network and Security, click Elastic IPs. 
 ![](/assets/images/geostack/elastic_ip.png)
@@ -80,7 +74,7 @@ Make sure the ip is selected then under Actions click Associate Elastic IP addre
 
 Select your instance from the instance dropdown, leave everything else as is and click Associate. 
 
-You EC2 instance is not ready and can be accessed via SSH. We know install [Geoserver](http://geoserver.org) and [PostGIS](https://postgis.net) on it.
+Your EC2 instance is not ready and can be accessed via SSH. We know install [Geoserver](http://geoserver.org) and [PostGIS](https://postgis.net) on it.
 
 ---
 
@@ -234,50 +228,5 @@ You can now access your PostgreSQL database on your own machine.
 
 We have created an AWS instance and installed Geoserver and PostgreSQL. We have completed the geospatial stack!
 This set up is relatively free so our resources (CPU and memory) are limited. I suggest you use a more powerful instance to increase performance. Beyond that, there are other methods we can use to improve the performance of this set up, but are out of the scope of this walk through.
-
-Next we will link our instance to our domain and secure it with and [SSL certificate](https://www.verisign.com/en_IN/website-presence/online/ssl-certificates/index.xhtml). 
-
----
-
-# Use an SSL Certificate to Secure All 
-
-An SSL certificate is the standard technology for keeping an internet connection secure and protecting data transfer between systems. For more info check [this](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate) out. 
-
-To set up our SSL certificate go to you AWS dashboard and select Certificate Manager from the Services drop-down menu.
-![](/assets/images/geostack/cert_manager.png)
-
-Click Get Started under Provision certificates.
-Make sure Request a public certificate is selected, then Request a certificate. 
-![](/assets/images/geostack/request_cert.png)
-
-Fill in you domain name with an `*` at the begining.
-```
-*.domainname.com
-``` 
-
-Select DNS validation and click Next until you reach the Validation step.
-
-Click Export DNS configuration to a file. Once downloaded, open this file.
-![](/assets/images/geostack/export_dns.png)
-
-Now log into you domain's management dashboard. This will vary depending on what domain service you are using.
-If you are using namecheap, log into your account, click Domain List, Manage, and Advance DNS.
-![](/assets/images/geostack/geostack/advanced_dns.png)
-
-Delete any existing records by clicking the trash symbol on the right side. Records are located at the bottom of the screen.
-
-Click on Add New Record to add the DNS configuration in the `.csv` we just downloaded.
-Use Record Name for Host. Only the value before dot has to remain. For example, remove `.mydomain.com` from `1234.mydomain.com` and paste only the value `1234`.
-Record Value goes under Values.
-Click the green check mark.
-
-Refresh the Certificate Manager Dashboard in AWS. Under your certificate status you should see `Issued` and `Success` in green. This might take a few minutes. 
-
-
-
-To be continued...
-Check in soon!
-
-
 
 
