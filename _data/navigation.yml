@@ -1,4 +1,5 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Gallery"
     url: /gallery/
