@@ -3,9 +3,9 @@ permalink: /others/
 title: "Others"
 ---
 
-### Quick and easily explore [COVID-19 World Symptoms Survey API](https://gisumd.github.io/COVID-19-API-Documentation/docs/home.html) data
+## Quick and easily explore [COVID-19 World Symptoms Survey API](https://gisumd.github.io/COVID-19-API-Documentation/docs/home.html) data
 
-#### This data exploration tool quickly compares **daily** survey indicator aggregates from the [COVID-19 World Symptoms Survey](https://covidmap.umd.edu).
+This data exploration tool quickly compares **daily** survey indicator aggregates from the [COVID-19 World Symptoms Survey](https://covidmap.umd.edu).
 
 ![](https://img.shields.io/static/v1?label=lifecycle&message=beta&color=blue)
 
