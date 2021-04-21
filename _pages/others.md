@@ -10,3 +10,5 @@ This data exploration tool quickly compares **daily** survey indicator aggregate
 ![](https://img.shields.io/static/v1?label=lifecycle&message=beta&color=blue)
 
 [![COVID-19 API Explorer](/assets/images/others/api_explorer.png)](https://share.streamlit.io/andgarc/covid19-umd-api-explorer/main/api.py?fbclid=IwAR1qUIHV-NAtAXDIcsbykoUDLJC9zH3Sh1MIrcfYzC6vrQQJTCPYpYvsd7g)
+
+---
