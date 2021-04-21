@@ -70,7 +70,7 @@ author:
       url: "https://geospatial.umd.edu"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "/pages/email.md"
+      url: "/_pages/email.md"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andGarc"
