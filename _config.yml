@@ -116,7 +116,7 @@ tag_archive:
   type: liquid
   path: /tags/
 analytics:
-provider: "google"
-google:
-  tracking_id: "UA-195237999-2"
-  anonymize_ip: false 
+  provider: "google"
+  google:
+    tracking_id: "UA-179471022-2"
+    anonymize_ip: false 
