@@ -70,7 +70,7 @@ author:
       url: "https://geospatial.umd.edu"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:garcia.andres@protonmail.com"
+      url: "mailto:angarcia@umd.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andGarc"
@@ -115,3 +115,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+analytics:
+provider: "google"
+google:
+  tracking_id: "UA-195237999-2"
+  anonymize_ip: false 
